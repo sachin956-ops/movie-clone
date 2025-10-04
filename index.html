@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BollywoodFlix</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <header>
+      <div class="brand">
+        <div class="logo">BF</div>
+        <div>
+          <div class="brand-title">BollywoodFlix</div>
+          <div class="muted small">Bollywood-focused picks • Offline demo</div>
+        </div>
+      </div>
+      <nav id="main-nav">
+        <a href="#/home" data-link>Home</a>
+        <a href="#/watchlist" data-link>Watchlist <span id="watch-count" class="watch-count" style="display:none">0</span></a>
+        <a href="#/login" data-link id="login-link">Login / Signup</a>
+      </nav>
+      <div class="controls">
+        <div id="user-greet" class="muted small"></div>
+        <button id="logout-btn" class="ghost" style="display:none">Logout</button>
+      </div>
+    </header>
+
+    <main id="view-root"></main>
+
+    <div id="modal" class="modal-backdrop" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="close" id="modal-close" aria-label="Close">✕</button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
