@@ -18,6 +18,10 @@ nav a.active{color:#fff}
 .btn:hover{transform:scale(1.04)}
 .ghost{background:transparent;border:1px solid var(--glass);padding:8px 10px;border-radius:8px;color:var(--muted);transition:background .15s}
 .ghost:hover{background:var(--glass);color:#fff}
+.logo img {
+  width:60px;   /* Adjust width as needed */
+  height: 60px;  /* Maintains aspect ratio */
+}
 
 /* layout */
 .toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:12px 0}
